@@ -16,5 +16,10 @@ namespace Fitnes_system_Viking__by_Orlov__Timoshin_
         {
             InitializeComponent();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            string a = "1231";
+        }
     }
 }
