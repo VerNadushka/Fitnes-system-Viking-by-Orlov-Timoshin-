@@ -40,8 +40,8 @@
             panel1 = new Panel();
             guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             label1 = new Label();
-            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            LoginTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            PasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
             panel1.SuspendLayout();
@@ -99,49 +99,52 @@
             label1.Text = "ВХОД";
             label1.Click += label1_Click;
             // 
-            // guna2TextBox1
+            // LoginTextBox
             // 
-            guna2TextBox1.BorderRadius = 10;
-            guna2TextBox1.CustomizableEdges = customizableEdges5;
-            guna2TextBox1.DefaultText = "";
-            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(51, 152);
-            guna2TextBox1.Margin = new Padding(5);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PasswordChar = '\0';
-            guna2TextBox1.PlaceholderText = "Логин";
-            guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2TextBox1.Size = new Size(276, 40);
-            guna2TextBox1.TabIndex = 1;
+            LoginTextBox.BorderRadius = 10;
+            LoginTextBox.CustomizableEdges = customizableEdges5;
+            LoginTextBox.DefaultText = "";
+            LoginTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            LoginTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            LoginTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            LoginTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            LoginTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            LoginTextBox.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            LoginTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            LoginTextBox.Location = new Point(51, 152);
+            LoginTextBox.Margin = new Padding(5);
+            LoginTextBox.Name = "LoginTextBox";
+            LoginTextBox.PasswordChar = '\0';
+            LoginTextBox.PlaceholderText = "Логин";
+            LoginTextBox.SelectedText = "";
+            LoginTextBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            LoginTextBox.Size = new Size(276, 40);
+            LoginTextBox.TabIndex = 1;
+            LoginTextBox.TextChanged += LoginTextBox_TextChanged;
             // 
-            // guna2TextBox2
+            // PasswordTextBox
             // 
-            guna2TextBox2.BorderRadius = 10;
-            guna2TextBox2.CustomizableEdges = customizableEdges3;
-            guna2TextBox2.DefaultText = "";
-            guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox2.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Location = new Point(51, 220);
-            guna2TextBox2.Margin = new Padding(5);
-            guna2TextBox2.Name = "guna2TextBox2";
-            guna2TextBox2.PasswordChar = '\0';
-            guna2TextBox2.PlaceholderText = " Пароль";
-            guna2TextBox2.SelectedText = "";
-            guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2TextBox2.Size = new Size(276, 40);
-            guna2TextBox2.TabIndex = 2;
+            PasswordTextBox.BorderRadius = 10;
+            PasswordTextBox.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            PasswordTextBox.CustomizableEdges = customizableEdges3;
+            PasswordTextBox.DefaultText = "";
+            PasswordTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            PasswordTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            PasswordTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            PasswordTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            PasswordTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            PasswordTextBox.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            PasswordTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            PasswordTextBox.Location = new Point(51, 220);
+            PasswordTextBox.Margin = new Padding(5);
+            PasswordTextBox.Name = "PasswordTextBox";
+            PasswordTextBox.PasswordChar = '\0';
+            PasswordTextBox.PlaceholderText = " Пароль";
+            PasswordTextBox.SelectedText = "";
+            PasswordTextBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            PasswordTextBox.Size = new Size(276, 40);
+            PasswordTextBox.TabIndex = 2;
+            PasswordTextBox.TextChanged += PasswordTextBox_TextChanged;
             // 
             // guna2Button1
             // 
@@ -162,6 +165,7 @@
             guna2Button1.Size = new Size(180, 45);
             guna2Button1.TabIndex = 3;
             guna2Button1.Text = "Войти";
+            guna2Button1.Click += guna2Button1_Click;
             // 
             // guna2CheckBox1
             // 
@@ -180,6 +184,7 @@
             guna2CheckBox1.UncheckedState.BorderRadius = 0;
             guna2CheckBox1.UncheckedState.BorderThickness = 0;
             guna2CheckBox1.UncheckedState.FillColor = Color.FromArgb(125, 137, 149);
+            guna2CheckBox1.CheckedChanged += guna2CheckBox1_CheckedChanged;
             // 
             // Form1
             // 
@@ -188,14 +193,15 @@
             ClientSize = new Size(392, 518);
             Controls.Add(guna2CheckBox1);
             Controls.Add(guna2Button1);
-            Controls.Add(guna2TextBox2);
-            Controls.Add(guna2TextBox1);
+            Controls.Add(PasswordTextBox);
+            Controls.Add(LoginTextBox);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             MaximumSize = new Size(392, 518);
             MinimumSize = new Size(392, 518);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -208,8 +214,8 @@
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm2;
         private Panel panel1;
         private Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox PasswordTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox LoginTextBox;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
