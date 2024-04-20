@@ -30,6 +30,7 @@
         {
             components = new System.ComponentModel.Container();
             guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
+            UpPanel = new Panel();
             SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -39,11 +40,20 @@
             guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
+            // UpPanel
+            // 
+            UpPanel.Dock = DockStyle.Top;
+            UpPanel.Location = new Point(0, 0);
+            UpPanel.Name = "UpPanel";
+            UpPanel.Size = new Size(800, 41);
+            UpPanel.TabIndex = 0;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(UpPanel);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form2";
             Text = "Form2";
@@ -54,5 +64,6 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Panel UpPanel;
     }
 }
