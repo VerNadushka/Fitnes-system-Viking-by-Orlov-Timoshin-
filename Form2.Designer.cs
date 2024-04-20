@@ -42,6 +42,7 @@
             // 
             // UpPanel
             // 
+            UpPanel.BackColor = Color.FromArgb(64, 64, 64);
             UpPanel.Dock = DockStyle.Top;
             UpPanel.Location = new Point(0, 0);
             UpPanel.Name = "UpPanel";
