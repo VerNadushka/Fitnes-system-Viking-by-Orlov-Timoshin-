@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Fitnes_system_Viking__by_Orlov__Timoshin_
 {
     public partial class Form2 : Form
@@ -19,7 +20,18 @@ namespace Fitnes_system_Viking__by_Orlov__Timoshin_
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            string a = "1231";
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Database databaseObject = new Database();
+
+            /*
+             * INSERT INTO DATABASE
+             * 
+             */
+            //string query = "INSERT INTO users";
         }
     }
 }
