@@ -42,17 +42,32 @@ namespace Fitnes_system_Viking__by_Orlov__Timoshin_
 
         private void button2_Click(object sender, EventArgs e)
         {
+            string name = namebox.Text;
+            string surname = surnamebox.Text;
+            string patronymic = patronymicbox.Text;
+            string year = yearbox.Text;
+            string ticket;
+            if (ticketcheckbox.Checked == true)
+            {
+                ticket = "Есть";
+            }
+            else
+            {
+                ticket = "Нету";
+            }
             Database databaseObj = new Database();
             /**
              * INSERT INTO DATABASE
              * *
              */
-            string query = "INSERT INTO Users ('name', 'surname', 'patronymic') VALUES (@name, @surname, @patronymic)";
+            string query = "INSERT INTO Users ('name', 'surname', 'patronymic','ticket', 'birthday') VALUES (@name, @surname, @patronymic, @ticket, @birthday";
             SQLiteCommand myCommand = new SQLiteCommand(query, databaseObj.myConnection);
             databaseObj.OpenConnection();
-            myCommand.Parameters.AddWithValue("@name", "Nikita");
-            myCommand.Parameters.AddWithValue("@surname", "Orlov");
-            myCommand.Parameters.AddWithValue("@patronymic", "Romanovich");
+            myCommand.Parameters.AddWithValue($"@name", name);
+            myCommand.Parameters.AddWithValue($"@surname", surname);
+            myCommand.Parameters.AddWithValue($"@patronymic", patronymic);
+            myCommand.Parameters.AddWithValue($"@birthday", year);
+            myCommand.Parameters.AddWithValue($"@ticket", ticket);
             var result = myCommand.ExecuteNonQuery();
             databaseObj.CloseConnection();
 
