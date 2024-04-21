@@ -28,11 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
             UpPanel = new Panel();
             button1 = new Button();
-            dataGridView1 = new DataGridView();
             button2 = new Button();
             patronymicbox = new TextBox();
             surnamebox = new TextBox();
@@ -44,15 +41,8 @@
             label4 = new Label();
             label5 = new Label();
             ticketcheckbox = new CheckBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            LoadData = new Button();
             SuspendLayout();
-            // 
-            // guna2BorderlessForm1
-            // 
-            guna2BorderlessForm1.BorderRadius = 25;
-            guna2BorderlessForm1.ContainerControl = this;
-            guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
             // UpPanel
             // 
@@ -60,7 +50,7 @@
             UpPanel.Dock = DockStyle.Top;
             UpPanel.Location = new Point(0, 0);
             UpPanel.Name = "UpPanel";
-            UpPanel.Size = new Size(1042, 41);
+            UpPanel.Size = new Size(1031, 41);
             UpPanel.TabIndex = 0;
             // 
             // button1
@@ -73,18 +63,9 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(511, 68);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(519, 461);
-            dataGridView1.TabIndex = 2;
-            // 
             // button2
             // 
-            button2.Location = new Point(54, 222);
+            button2.Location = new Point(54, 258);
             button2.Name = "button2";
             button2.Size = new Size(148, 23);
             button2.TabIndex = 3;
@@ -168,18 +149,30 @@
             // ticketcheckbox
             // 
             ticketcheckbox.AutoSize = true;
-            ticketcheckbox.Location = new Point(278, 121);
+            ticketcheckbox.Location = new Point(12, 214);
             ticketcheckbox.Name = "ticketcheckbox";
             ticketcheckbox.Size = new Size(144, 19);
             ticketcheckbox.TabIndex = 13;
             ticketcheckbox.Text = "Наличие абонемента";
             ticketcheckbox.UseVisualStyleBackColor = true;
+            ticketcheckbox.CheckedChanged += ticketcheckbox_CheckedChanged;
+            // 
+            // LoadData
+            // 
+            LoadData.Location = new Point(619, 545);
+            LoadData.Name = "LoadData";
+            LoadData.Size = new Size(129, 23);
+            LoadData.TabIndex = 14;
+            LoadData.Text = "Загрузить Данные";
+            LoadData.UseVisualStyleBackColor = true;
+            LoadData.Click += LoadData_Click;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1042, 583);
+            ClientSize = new Size(1031, 583);
+            Controls.Add(LoadData);
             Controls.Add(ticketcheckbox);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -191,24 +184,19 @@
             Controls.Add(surnamebox);
             Controls.Add(patronymicbox);
             Controls.Add(button2);
-            Controls.Add(dataGridView1);
             Controls.Add(button1);
             Controls.Add(UpPanel);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form2";
             Text = "Form2";
             Load += Form2_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Panel UpPanel;
         private Button button1;
-        private DataGridView dataGridView1;
         private Button button2;
         private TextBox yearbox;
         private TextBox namebox;
@@ -220,5 +208,6 @@
         private Label label4;
         private CheckBox ticketcheckbox;
         private Label label5;
+        private Button LoadData;
     }
 }

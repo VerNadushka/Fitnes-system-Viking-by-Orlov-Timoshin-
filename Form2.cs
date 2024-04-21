@@ -17,6 +17,7 @@ namespace Fitnes_system_Viking__by_Orlov__Timoshin_
         public Form2()
         {
             InitializeComponent();
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -45,7 +46,7 @@ namespace Fitnes_system_Viking__by_Orlov__Timoshin_
             string name = namebox.Text;
             string surname = surnamebox.Text;
             string patronymic = patronymicbox.Text;
-            string year = yearbox.Text;
+            string birthday = yearbox.Text;
             string ticket;
             if (ticketcheckbox.Checked == true)
             {
@@ -60,16 +61,31 @@ namespace Fitnes_system_Viking__by_Orlov__Timoshin_
              * INSERT INTO DATABASE
              * *
              */
-            string query = "INSERT INTO Users ('name', 'surname', 'patronymic','ticket', 'birthday') VALUES (@name, @surname, @patronymic, @ticket, @birthday";
+            string query = "INSERT INTO Users ('name', 'surname', 'patronymic','ticket', 'birthday') VALUES (@name, @surname, @patronymic, @ticket, @birthday)";
             SQLiteCommand myCommand = new SQLiteCommand(query, databaseObj.myConnection);
             databaseObj.OpenConnection();
             myCommand.Parameters.AddWithValue($"@name", name);
             myCommand.Parameters.AddWithValue($"@surname", surname);
             myCommand.Parameters.AddWithValue($"@patronymic", patronymic);
-            myCommand.Parameters.AddWithValue($"@birthday", year);
+            myCommand.Parameters.AddWithValue($"@birthday", birthday);
             myCommand.Parameters.AddWithValue($"@ticket", ticket);
             var result = myCommand.ExecuteNonQuery();
             databaseObj.CloseConnection();
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void ticketcheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoadData_Click(object sender, EventArgs e)
+        {
 
         }
     }
