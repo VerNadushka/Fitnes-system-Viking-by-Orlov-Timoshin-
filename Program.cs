@@ -1,3 +1,5 @@
+using System.Data.SQLite;
+
 namespace Fitnes_system_Viking__by_Orlov__Timoshin_
 {
     internal static class Program
@@ -12,6 +14,7 @@ namespace Fitnes_system_Viking__by_Orlov__Timoshin_
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
+           
         }
     }
 }

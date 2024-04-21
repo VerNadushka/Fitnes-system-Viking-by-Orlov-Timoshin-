@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,7 @@ namespace Fitnes_system_Viking__by_Orlov__Timoshin_
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -32,6 +33,29 @@ namespace Fitnes_system_Viking__by_Orlov__Timoshin_
              * 
              */
             //string query = "INSERT INTO users";
+        }
+
+        private void fileSystemWatcher1_Changed(object sender, FileSystemEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Database databaseObj = new Database();
+            /**
+             * INSERT INTO DATABASE
+             * *
+             */
+            string query = "INSERT INTO Users ('name', 'surname', 'patronymic') VALUES (@name, @surname, @patronymic)";
+            SQLiteCommand myCommand = new SQLiteCommand(query, databaseObj.myConnection);
+            databaseObj.OpenConnection();
+            myCommand.Parameters.AddWithValue("@name", "Nikita");
+            myCommand.Parameters.AddWithValue("@surname", "Orlov");
+            myCommand.Parameters.AddWithValue("@patronymic", "Romanovich");
+            var result = myCommand.ExecuteNonQuery();
+            databaseObj.CloseConnection();
+
         }
     }
 }

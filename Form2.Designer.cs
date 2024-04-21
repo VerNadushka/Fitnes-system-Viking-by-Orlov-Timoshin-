@@ -32,6 +32,9 @@
             guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
             UpPanel = new Panel();
             button1 = new Button();
+            dataGridView1 = new DataGridView();
+            button2 = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -60,17 +63,39 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(314, 144);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(240, 150);
+            dataGridView1.TabIndex = 2;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(44, 185);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 3;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
+            Controls.Add(dataGridView1);
             Controls.Add(button1);
             Controls.Add(UpPanel);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form2";
             Text = "Form2";
             Load += Form2_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -79,5 +104,7 @@
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Panel UpPanel;
         private Button button1;
+        private DataGridView dataGridView1;
+        private Button button2;
     }
 }

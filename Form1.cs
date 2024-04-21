@@ -74,8 +74,8 @@ namespace Fitnes_system_Viking__by_Orlov__Timoshin_
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            string login = "Admin";
-            string password = "AdminPass";
+            string login = "1";
+            string password = "2";
             if (LoginTextBox.Text == login || PasswordTextBox.Text == password )
             {
                 Form2 form2 = new Form2();
