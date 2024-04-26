@@ -30,7 +30,7 @@ namespace Fitnes_system_Viking__by_Orlov__Timoshin_
         {
             Database database = new Database();
 
-            string query = "CREATE TABLE \"Users\" (\r\n\t\"id\"\tINTEGER NOT NULL,\r\n\t\"name\"\tTEXT,\r\n\t\"surname\"\tTEXT,\r\n\t\"patronymic\"\tTEXT,\r\n\t\"birthday\"\tTEXT,\r\n\t\"ticket\"\tTEXT,\r\n\tPRIMARY KEY(\"id\" AUTOINCREMENT)\r\n\t\"number\"\tTEXT);";
+            string query = "CREATE TABLE \"Users\" (\r\n\t\"id\"\tINTEGER NOT NULL,\r\n\t\"name\"\tTEXT,\r\n\t\"surname\"\tTEXT,\r\n\t\"patronymic\"\tTEXT,\r\n\t\"birthday\"\tTEXT,\r\n\t\"number\"\tTEXT,\r\n\t\"status\"\tTEXT,\r\n\t\"tickettime\"\tTEXT,\r\n\tPRIMARY KEY(\"id\" AUTOINCREMENT)\r\n);";
             database.myConnection.Open();
             SQLiteCommand command = new SQLiteCommand(query, database.myConnection);
             command.ExecuteNonQuery();
