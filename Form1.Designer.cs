@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -36,176 +36,174 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            guna2BorderlessForm2 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
-            panel1 = new Panel();
-            guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
-            label1 = new Label();
-            LoginTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            PasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
-            panel1.SuspendLayout();
-            SuspendLayout();
+            this.guna2BorderlessForm2 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.LoginTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // guna2BorderlessForm2
             // 
-            guna2BorderlessForm2.BorderRadius = 35;
-            guna2BorderlessForm2.ContainerControl = this;
-            guna2BorderlessForm2.DockIndicatorTransparencyValue = 0.6D;
-            guna2BorderlessForm2.TransparentWhileDrag = true;
+            this.guna2BorderlessForm2.BorderRadius = 35;
+            this.guna2BorderlessForm2.ContainerControl = this;
+            this.guna2BorderlessForm2.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm2.TransparentWhileDrag = true;
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(46, 46, 46);
-            panel1.Controls.Add(guna2CircleButton1);
-            panel1.Controls.Add(label1);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(392, 110);
-            panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
-            panel1.MouseDown += panel1_MouseDown;
-            panel1.MouseMove += panel1_MouseMove;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.panel1.Controls.Add(this.guna2CircleButton1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(392, 110);
+            this.panel1.TabIndex = 0;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown_1);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove_1);
             // 
             // guna2CircleButton1
             // 
-            guna2CircleButton1.Cursor = Cursors.Hand;
-            guna2CircleButton1.DisabledState.BorderColor = Color.DarkGray;
-            guna2CircleButton1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2CircleButton1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2CircleButton1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2CircleButton1.FillColor = Color.FromArgb(64, 64, 64);
-            guna2CircleButton1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2CircleButton1.ForeColor = Color.White;
-            guna2CircleButton1.Location = new Point(355, 7);
-            guna2CircleButton1.Name = "guna2CircleButton1";
-            guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges7;
-            guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            guna2CircleButton1.Size = new Size(29, 28);
-            guna2CircleButton1.TabIndex = 1;
-            guna2CircleButton1.Text = "X";
-            guna2CircleButton1.Click += guna2CircleButton1_Click;
+            this.guna2CircleButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2CircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2CircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2CircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2CircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2CircleButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.Location = new System.Drawing.Point(355, 7);
+            this.guna2CircleButton1.Name = "guna2CircleButton1";
+            this.guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges7;
+            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton1.Size = new System.Drawing.Size(29, 28);
+            this.guna2CircleButton1.TabIndex = 1;
+            this.guna2CircleButton1.Text = "X";
+            this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click_1);
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Tahoma", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(135, 33);
-            label1.Name = "label1";
-            label1.Size = new Size(120, 42);
-            label1.TabIndex = 0;
-            label1.Text = "ВХОД";
-            label1.Click += label1_Click;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(135, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 42);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ВХОД";
             // 
             // LoginTextBox
             // 
-            LoginTextBox.BorderRadius = 10;
-            LoginTextBox.CustomizableEdges = customizableEdges5;
-            LoginTextBox.DefaultText = "";
-            LoginTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            LoginTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            LoginTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            LoginTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            LoginTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            LoginTextBox.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            LoginTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            LoginTextBox.Location = new Point(51, 152);
-            LoginTextBox.Margin = new Padding(5);
-            LoginTextBox.Name = "LoginTextBox";
-            LoginTextBox.PasswordChar = '\0';
-            LoginTextBox.PlaceholderText = "Логин";
-            LoginTextBox.SelectedText = "";
-            LoginTextBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            LoginTextBox.Size = new Size(276, 40);
-            LoginTextBox.TabIndex = 1;
-            LoginTextBox.TextChanged += LoginTextBox_TextChanged;
+            this.LoginTextBox.BorderRadius = 10;
+            this.LoginTextBox.CustomizableEdges = customizableEdges5;
+            this.LoginTextBox.DefaultText = "";
+            this.LoginTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.LoginTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.LoginTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.LoginTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.LoginTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.LoginTextBox.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LoginTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.LoginTextBox.Location = new System.Drawing.Point(51, 152);
+            this.LoginTextBox.Margin = new System.Windows.Forms.Padding(5);
+            this.LoginTextBox.Name = "LoginTextBox";
+            this.LoginTextBox.PasswordChar = '\0';
+            this.LoginTextBox.PlaceholderText = "Логин";
+            this.LoginTextBox.SelectedText = "";
+            this.LoginTextBox.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            this.LoginTextBox.Size = new System.Drawing.Size(276, 40);
+            this.LoginTextBox.TabIndex = 1;
+            this.LoginTextBox.TextChanged += new System.EventHandler(this.LoginTextBox_TextChanged_1);
             // 
             // PasswordTextBox
             // 
-            PasswordTextBox.BorderRadius = 10;
-            PasswordTextBox.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            PasswordTextBox.CustomizableEdges = customizableEdges3;
-            PasswordTextBox.DefaultText = "";
-            PasswordTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            PasswordTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            PasswordTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            PasswordTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            PasswordTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            PasswordTextBox.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            PasswordTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            PasswordTextBox.Location = new Point(51, 220);
-            PasswordTextBox.Margin = new Padding(5);
-            PasswordTextBox.Name = "PasswordTextBox";
-            PasswordTextBox.PasswordChar = '\0';
-            PasswordTextBox.PlaceholderText = " Пароль";
-            PasswordTextBox.SelectedText = "";
-            PasswordTextBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            PasswordTextBox.Size = new Size(276, 40);
-            PasswordTextBox.TabIndex = 2;
-            PasswordTextBox.TextChanged += PasswordTextBox_TextChanged;
+            this.PasswordTextBox.BorderRadius = 10;
+            this.PasswordTextBox.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.PasswordTextBox.CustomizableEdges = customizableEdges3;
+            this.PasswordTextBox.DefaultText = "";
+            this.PasswordTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PasswordTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PasswordTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTextBox.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.PasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTextBox.Location = new System.Drawing.Point(51, 220);
+            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(5);
+            this.PasswordTextBox.Name = "PasswordTextBox";
+            this.PasswordTextBox.PasswordChar = '\0';
+            this.PasswordTextBox.PlaceholderText = " Пароль";
+            this.PasswordTextBox.SelectedText = "";
+            this.PasswordTextBox.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.PasswordTextBox.Size = new System.Drawing.Size(276, 40);
+            this.PasswordTextBox.TabIndex = 2;
             // 
             // guna2Button1
             // 
-            guna2Button1.BorderRadius = 15;
-            guna2Button1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            guna2Button1.Cursor = Cursors.Hand;
-            guna2Button1.CustomizableEdges = customizableEdges1;
-            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.FillColor = Color.FromArgb(0, 192, 0);
-            guna2Button1.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(105, 437);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Button1.Size = new Size(180, 45);
-            guna2Button1.TabIndex = 3;
-            guna2Button1.Text = "Войти";
-            guna2Button1.Click += guna2Button1_Click;
+            this.guna2Button1.BorderRadius = 15;
+            this.guna2Button1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button1.CustomizableEdges = customizableEdges1;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(105, 437);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button1.TabIndex = 3;
+            this.guna2Button1.Text = "Войти";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
             // guna2CheckBox1
             // 
-            guna2CheckBox1.AutoSize = true;
-            guna2CheckBox1.CheckedState.BorderColor = Color.FromArgb(0, 192, 0);
-            guna2CheckBox1.CheckedState.BorderRadius = 0;
-            guna2CheckBox1.CheckedState.BorderThickness = 0;
-            guna2CheckBox1.CheckedState.FillColor = Color.FromArgb(0, 192, 0);
-            guna2CheckBox1.Cursor = Cursors.Hand;
-            guna2CheckBox1.Location = new Point(63, 268);
-            guna2CheckBox1.Name = "guna2CheckBox1";
-            guna2CheckBox1.Size = new Size(119, 19);
-            guna2CheckBox1.TabIndex = 4;
-            guna2CheckBox1.Text = "Показать пароль";
-            guna2CheckBox1.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
-            guna2CheckBox1.UncheckedState.BorderRadius = 0;
-            guna2CheckBox1.UncheckedState.BorderThickness = 0;
-            guna2CheckBox1.UncheckedState.FillColor = Color.FromArgb(125, 137, 149);
-            guna2CheckBox1.CheckedChanged += guna2CheckBox1_CheckedChanged;
+            this.guna2CheckBox1.AutoSize = true;
+            this.guna2CheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.guna2CheckBox1.CheckedState.BorderRadius = 0;
+            this.guna2CheckBox1.CheckedState.BorderThickness = 0;
+            this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.guna2CheckBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2CheckBox1.Location = new System.Drawing.Point(63, 268);
+            this.guna2CheckBox1.Name = "guna2CheckBox1";
+            this.guna2CheckBox1.Size = new System.Drawing.Size(119, 19);
+            this.guna2CheckBox1.TabIndex = 4;
+            this.guna2CheckBox1.Text = "Показать пароль";
+            this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CheckBox1.UncheckedState.BorderRadius = 0;
+            this.guna2CheckBox1.UncheckedState.BorderThickness = 0;
+            this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CheckBox1.CheckedChanged += new System.EventHandler(this.guna2CheckBox1_CheckedChanged_1);
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(392, 518);
-            Controls.Add(guna2CheckBox1);
-            Controls.Add(guna2Button1);
-            Controls.Add(PasswordTextBox);
-            Controls.Add(LoginTextBox);
-            Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
-            MaximumSize = new Size(392, 518);
-            MinimumSize = new Size(392, 518);
-            Name = "Form1";
-            Text = "Form1";
-            Load += Form1_Load;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(392, 518);
+            this.Controls.Add(this.guna2CheckBox1);
+            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.PasswordTextBox);
+            this.Controls.Add(this.LoginTextBox);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(392, 518);
+            this.MinimumSize = new System.Drawing.Size(392, 518);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

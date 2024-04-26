@@ -5,42 +5,40 @@ namespace Fitnes_system_Viking__by_Orlov__Timoshin_
         public Form1()
         {
             InitializeComponent();
+        
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
+        
+        //private void label1_Click(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
-        private void guna2CircleButton1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        //private void guna2CircleButton1_Click(object sender, EventArgs e)
+        //{
+        //    Application.Exit();
+        //}
 
         Point mousepoint;
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
+        //private void panel1_Paint(object sender, PaintEventArgs e)
+        //{
 
-        }
+        //}
+        //private void panel1_MouseMove(object sender, MouseEventArgs e)
+        //{
+        //    if (e.Button == MouseButtons.Left)
+        //    {
+        //        this.Left += e.X - mousepoint.X;
+        //        this.Top += e.Y - mousepoint.Y;
+        //    }
+        //}
 
-        private void panel1_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                this.Left += e.X - mousepoint.X;
-                this.Top += e.Y - mousepoint.Y;
-            }
-        }
+        //private void panel1_MouseDown(object sender, MouseEventArgs e)
+        //{
+        //    mousepoint = new Point(e.X, e.Y);
+        //}
 
-        private void panel1_MouseDown(object sender, MouseEventArgs e)
-        {
-            mousepoint = new Point(e.X, e.Y);
-        }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            PassHide();
-        }
 
         private void PassShow()
         {
@@ -50,12 +48,74 @@ namespace Fitnes_system_Viking__by_Orlov__Timoshin_
         {
             PasswordTextBox.UseSystemPasswordChar = true;
         }
-        private void PasswordTextBox_TextChanged(object sender, EventArgs e)
+        //private void PasswordTextBox_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    if (guna2CheckBox1.Checked == true)
+        //    {
+        //        PassShow();
+        //    }
+        //    else if (guna2CheckBox1.Checked == false)
+        //    {
+        //        PassHide();
+        //    }
+        //}
+
+        //private void LoginTextBox_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
+        private void guna2CircleButton1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            string login = "1";
+            string password = "2";
+            if (LoginTextBox.Text == login && PasswordTextBox.Text == password)
+            {
+                Form2 form2 = new Form2();
+                form2.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Неправильно введен пароль или логин", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void panel1_MouseMove_1(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - mousepoint.X;
+                this.Top += e.Y - mousepoint.Y;
+            }
+        }
+
+        private void LoginTextBox_TextChanged_1(object sender, EventArgs e)
         {
 
         }
 
-        private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
+        private void panel1_MouseDown_1(object sender, MouseEventArgs e)
+        {
+            mousepoint = new Point(e.X, e.Y);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+          PassHide();
+
+        }
+
+        private void guna2CheckBox1_CheckedChanged_1(object sender, EventArgs e)
         {
             if (guna2CheckBox1.Checked == true)
             {
@@ -64,27 +124,6 @@ namespace Fitnes_system_Viking__by_Orlov__Timoshin_
             else if (guna2CheckBox1.Checked == false)
             {
                 PassHide();
-            }
-        }
-
-        private void LoginTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            string login = "1";
-            string password = "2";
-            if (LoginTextBox.Text == login || PasswordTextBox.Text == password )
-            {
-                Form2 form2 = new Form2();
-                form2.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Неправильно введен пароль или логин", "Ошибка",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

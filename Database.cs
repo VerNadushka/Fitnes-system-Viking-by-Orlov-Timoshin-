@@ -12,7 +12,7 @@ namespace Fitnes_system_Viking__by_Orlov__Timoshin_
         public SQLiteConnection myConnection;
         public Database()
         {
-            myConnection = new SQLiteConnection("Data Source=FitnesUsers.sqlite3");// создание файла бд 
+            myConnection = new SQLiteConnection("Data Source = FitnesUsers.sqlite3");// создание файла бд 
             if (!File.Exists("./FitnesUsers.sqlite3"))// создавать файл если он не создан
             {
                 SQLiteConnection.CreateFile("FitnesUsers.sqlite3");

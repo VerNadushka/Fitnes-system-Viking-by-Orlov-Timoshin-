@@ -28,170 +28,243 @@
         /// </summary>
         private void InitializeComponent()
         {
-            UpPanel = new Panel();
-            button1 = new Button();
-            button2 = new Button();
-            patronymicbox = new TextBox();
-            surnamebox = new TextBox();
-            namebox = new TextBox();
-            yearbox = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            ticketcheckbox = new CheckBox();
-            LoadData = new Button();
-            SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            this.UpPanel = new System.Windows.Forms.Panel();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.patronymicbox = new System.Windows.Forms.TextBox();
+            this.surnamebox = new System.Windows.Forms.TextBox();
+            this.namebox = new System.Windows.Forms.TextBox();
+            this.yearbox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.ticketcheckbox = new System.Windows.Forms.CheckBox();
+            this.LoadData = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.numberbox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.UpPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
             // 
             // UpPanel
             // 
-            UpPanel.BackColor = Color.FromArgb(64, 64, 64);
-            UpPanel.Dock = DockStyle.Top;
-            UpPanel.Location = new Point(0, 0);
-            UpPanel.Name = "UpPanel";
-            UpPanel.Size = new Size(1031, 41);
-            UpPanel.TabIndex = 0;
+            this.UpPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.UpPanel.Controls.Add(this.guna2CircleButton1);
+            this.UpPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UpPanel.Location = new System.Drawing.Point(0, 0);
+            this.UpPanel.Name = "UpPanel";
+            this.UpPanel.Size = new System.Drawing.Size(1031, 41);
+            this.UpPanel.TabIndex = 0;
+            this.UpPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.UpPanel_Paint);
+            this.UpPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.UpPanel_MouseDown);
+            this.UpPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.UpPanel_MouseMove);
+            // 
+            // guna2CircleButton1
+            // 
+            this.guna2CircleButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2CircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2CircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2CircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2CircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2CircleButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.Location = new System.Drawing.Point(994, 6);
+            this.guna2CircleButton1.Name = "guna2CircleButton1";
+            this.guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges1;
+            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton1.Size = new System.Drawing.Size(29, 28);
+            this.guna2CircleButton1.TabIndex = 2;
+            this.guna2CircleButton1.Text = "X";
+            this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
             // 
             // button1
             // 
-            button1.Location = new Point(12, 519);
-            button1.Name = "button1";
-            button1.Size = new Size(80, 21);
-            button1.TabIndex = 1;
-            button1.Text = "бд";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            this.button1.Location = new System.Drawing.Point(12, 519);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 21);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "бд";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            button2.Location = new Point(54, 258);
-            button2.Name = "button2";
-            button2.Size = new Size(148, 23);
-            button2.TabIndex = 3;
-            button2.Text = "Добавить";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            this.button2.Location = new System.Drawing.Point(54, 258);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(148, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Добавить";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // patronymicbox
             // 
-            patronymicbox.Location = new Point(12, 168);
-            patronymicbox.Name = "patronymicbox";
-            patronymicbox.Size = new Size(100, 23);
-            patronymicbox.TabIndex = 4;
+            this.patronymicbox.Location = new System.Drawing.Point(12, 168);
+            this.patronymicbox.Name = "patronymicbox";
+            this.patronymicbox.Size = new System.Drawing.Size(100, 23);
+            this.patronymicbox.TabIndex = 4;
             // 
             // surnamebox
             // 
-            surnamebox.Location = new Point(12, 121);
-            surnamebox.Name = "surnamebox";
-            surnamebox.Size = new Size(100, 23);
-            surnamebox.TabIndex = 5;
+            this.surnamebox.Location = new System.Drawing.Point(12, 121);
+            this.surnamebox.Name = "surnamebox";
+            this.surnamebox.Size = new System.Drawing.Size(100, 23);
+            this.surnamebox.TabIndex = 5;
+            this.surnamebox.TextChanged += new System.EventHandler(this.surnamebox_TextChanged);
             // 
             // namebox
             // 
-            namebox.Location = new Point(138, 121);
-            namebox.Name = "namebox";
-            namebox.Size = new Size(100, 23);
-            namebox.TabIndex = 6;
+            this.namebox.Location = new System.Drawing.Point(138, 121);
+            this.namebox.Name = "namebox";
+            this.namebox.Size = new System.Drawing.Size(100, 23);
+            this.namebox.TabIndex = 6;
             // 
             // yearbox
             // 
-            yearbox.Location = new Point(138, 168);
-            yearbox.Name = "yearbox";
-            yearbox.Size = new Size(100, 23);
-            yearbox.TabIndex = 7;
+            this.yearbox.Location = new System.Drawing.Point(138, 168);
+            this.yearbox.Name = "yearbox";
+            this.yearbox.Size = new System.Drawing.Size(100, 23);
+            this.yearbox.TabIndex = 7;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(138, 103);
-            label1.Name = "label1";
-            label1.Size = new Size(31, 15);
-            label1.TabIndex = 8;
-            label1.Text = "Имя";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(138, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 15);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Имя";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(12, 103);
-            label2.Name = "label2";
-            label2.Size = new Size(58, 15);
-            label2.TabIndex = 9;
-            label2.Text = "Фамилия";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 103);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 15);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Фамилия";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(12, 150);
-            label3.Name = "label3";
-            label3.Size = new Size(58, 15);
-            label3.TabIndex = 10;
-            label3.Text = "Отчество";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 150);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 15);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Отчество";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(138, 150);
-            label4.Name = "label4";
-            label4.Size = new Size(84, 15);
-            label4.TabIndex = 11;
-            label4.Text = "Год рождения";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(138, 150);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(84, 15);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Год рождения";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(54, 68);
-            label5.Name = "label5";
-            label5.Size = new Size(152, 15);
-            label5.TabIndex = 12;
-            label5.Text = "Добавление пользователя";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(54, 68);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(152, 15);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Добавление пользователя";
             // 
             // ticketcheckbox
             // 
-            ticketcheckbox.AutoSize = true;
-            ticketcheckbox.Location = new Point(12, 214);
-            ticketcheckbox.Name = "ticketcheckbox";
-            ticketcheckbox.Size = new Size(144, 19);
-            ticketcheckbox.TabIndex = 13;
-            ticketcheckbox.Text = "Наличие абонемента";
-            ticketcheckbox.UseVisualStyleBackColor = true;
-            ticketcheckbox.CheckedChanged += ticketcheckbox_CheckedChanged;
+            this.ticketcheckbox.AutoSize = true;
+            this.ticketcheckbox.Location = new System.Drawing.Point(12, 214);
+            this.ticketcheckbox.Name = "ticketcheckbox";
+            this.ticketcheckbox.Size = new System.Drawing.Size(144, 19);
+            this.ticketcheckbox.TabIndex = 13;
+            this.ticketcheckbox.Text = "Наличие абонемента";
+            this.ticketcheckbox.UseVisualStyleBackColor = true;
             // 
             // LoadData
             // 
-            LoadData.Location = new Point(619, 545);
-            LoadData.Name = "LoadData";
-            LoadData.Size = new Size(129, 23);
-            LoadData.TabIndex = 14;
-            LoadData.Text = "Загрузить Данные";
-            LoadData.UseVisualStyleBackColor = true;
-            LoadData.Click += LoadData_Click;
+            this.LoadData.Location = new System.Drawing.Point(710, 548);
+            this.LoadData.Name = "LoadData";
+            this.LoadData.Size = new System.Drawing.Size(129, 23);
+            this.LoadData.TabIndex = 14;
+            this.LoadData.Text = "Загрузить Данные";
+            this.LoadData.UseVisualStyleBackColor = true;
+            this.LoadData.Click += new System.EventHandler(this.LoadData_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(461, 68);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(547, 471);
+            this.dataGridView1.TabIndex = 15;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.BorderRadius = 35;
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
+            // numberbox
+            // 
+            this.numberbox.Location = new System.Drawing.Point(275, 121);
+            this.numberbox.Name = "numberbox";
+            this.numberbox.Size = new System.Drawing.Size(100, 23);
+            this.numberbox.TabIndex = 16;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(275, 103);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(101, 15);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Номер телефона";
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1031, 583);
-            Controls.Add(LoadData);
-            Controls.Add(ticketcheckbox);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(yearbox);
-            Controls.Add(namebox);
-            Controls.Add(surnamebox);
-            Controls.Add(patronymicbox);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(UpPanel);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "Form2";
-            Text = "Form2";
-            Load += Form2_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1031, 583);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.numberbox);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.LoadData);
+            this.Controls.Add(this.ticketcheckbox);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.yearbox);
+            this.Controls.Add(this.namebox);
+            this.Controls.Add(this.surnamebox);
+            this.Controls.Add(this.patronymicbox);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.UpPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Form2";
+            this.Text = "Form2";
+            this.UpPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -209,5 +282,10 @@
         private CheckBox ticketcheckbox;
         private Label label5;
         private Button LoadData;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
+        private DataGridView dataGridView1;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Label label6;
+        private TextBox numberbox;
     }
 }
